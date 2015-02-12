@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MySqlBrowser</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <h1></h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Databases</div>
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked" role="navigation" id="databaseNav"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Tables</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="tableInput">Select a table</label>
+                        <select class="form-control" id="tableInput" disabled></select>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="btn-group">
+                        <a class="btn btn-default" id="btnQuery">Create query</a>
+                        <a class="btn btn-default" id="btnStruct">View structure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Query</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" style="resize: vertical;" id="txtQuery"></textarea>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="btn-group">
+                        <a class="btn btn-default" id="btnExecute">Execute query</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Result</div>
+                <div class="table-responsive">
+                    <table class="table table-striped" id="tblResult"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/Browser.js" async></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" async></script>
+</body>
+</html>
